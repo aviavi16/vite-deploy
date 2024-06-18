@@ -5,7 +5,7 @@ import './App.css'
 import ToDoList from './ToDoList.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
