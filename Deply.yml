@@ -24,6 +24,6 @@ jobs:
     - name: Run tests
       run: npm test
       
-    - name: Deploy
-      # Add your deployment steps here
-      # For example, deploying to a hosting service like Netlify or Vercel
+  - name: Install Vercel CLI
+    run: npm install -g vercel
+
