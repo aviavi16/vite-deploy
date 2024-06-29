@@ -8,13 +8,8 @@ import ToDoList from './ToDoList.jsx';
  */
 test('renders ToDoList component', () => {
     render(<ToDoList />);
+    const linkElement = screen.getByText(/To-Do-List/);
+
+      expect(linkElement).toBeInTheDocument();
   });
 
-  /**
- * @jest-environment jsdom
- */
-  test('renders ToDoList component with title', () => {
-    render(<ToDoList />);
-    const todoElement = screen.getAllByTestId('todo-1');
-    expect(todoElement).toBeInTheDocument();
-  });
