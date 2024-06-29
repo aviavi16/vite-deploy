@@ -9,6 +9,7 @@ describe('testing functionality', ()=> {
     const linkElement = screen.getAllByText("test my app using unit testing");
         
     expect(linkElement[0]).toBeInTheDocument();
+    //young man! you must fail!
     })
     
 });
