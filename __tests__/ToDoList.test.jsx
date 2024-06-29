@@ -7,7 +7,7 @@ describe('testing functionality', ()=> {
     it('my test', () => {
     render(<ToDoList/>);
     const linkElement = screen.getAllByText("test my app using unit testing");
-
+        //this should fail!!
     expect(linkElement[0]).toBeInTheDocument();
     })
     
