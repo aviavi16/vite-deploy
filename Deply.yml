@@ -28,6 +28,15 @@ jobs:
     - name: tests
       run: npm test --ci
     
+    - name: Display Test Results
+      run: echo "Test results:" && cat test_results.xml 
+
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: test_results2.xml 
+
     - name: Install Vercel CLI
       run: npm install -g vercel
     
