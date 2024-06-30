@@ -27,7 +27,7 @@ jobs:
     
     - name: tests
       run: npm test --ci
-    
+      
     - name: Display Test Results
       run: echo "Test results:" && cat test_results.xml 
 
